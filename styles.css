@@ -17,6 +17,7 @@ body {
 
 #title {
     margin: auto;
+    padding-top: 40px;
     font-family: Montserrat,Georgia,Verdana,sans-serif;
     font-size: 60px;
     font-weight: bold;
