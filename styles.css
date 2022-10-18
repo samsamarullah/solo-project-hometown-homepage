@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    text-align: center;
+    
+}
+    /* //////////////// HERO SECTION //////////////// */
+#hero-section {
+    background-image: url("images/van-skyline.jpg");
+    background-size: cover;
+    margin: auto;
+    padding: 20px 0 500px 0;
+    text-shadow: 1px 1px 10px red;
+    color: #F5F5F5; /* White Smoke Font */
+    
+}
+
+#title {
+    margin: auto;
+    font-family: Montserrat,Georgia,Verdana,sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.vancouver {
+    text-shadow: 
+        0 0 6px rgba(203,36,2,255),
+        0 0 12px rgba(203,36,2,255),
+        0 0 24px rgba(203,36,2,255),
+        0 0 48px rgba(203,36,2,255),
+        0 0 96px rgba(203,36,2,255)
+}
+#hero-tagline {
+    padding-top: 40px;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 1px 1px 15px blue;
+}
+
+    /* //////////////// ACTIVITES SECTION //////////////// */
+    
+.activities-header {
+    padding-top: 35px;
+    margin: 0;
+    font-size: 35px;
+    color: #4C4646;
+    background-color: #F5F5F5;
+    text-shadow: 0px 0px 2px red;
+}
+
+#activity-container {
+    display: Flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+    margin: 0 auto;  
+    background-color: #F5F5F5;
+}
+
+.activity-subcontainer1, .activity-subcontainer2, .activity-subcontainer3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 70px 30px 70px;
+    padding: 20px;
+    height: 275px;
+    width: 180px;
+        /* NOTE for Sam: Hero Picture gradient colors below being used */
+    Background: linear-gradient(-45deg, #91342c 0%, #8c4810 13%, #50140b 25%, #d42b05 38%,  #be8330 50%, #bc1906 62%, #791808 75%, #eb6f09 87%, #be8330 100%); 
+        /* NOTE for Sam: These percentages show what part of the gradient colors we are seeing */
+    background-size: 350% 350%;
+    border-radius: 10px;
+    box-shadow: inset 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    font-size: mediumn;
+    animation: gradient 20s ease infinite;
+}
+
+.activity-subcontainer1:hover, .activity-subcontainer2:hover, .activity-subcontainer3:hover {
+  box-shadow: 0px 20px 30px 5px #591f1c;
+  transform: translateY(-5px);
+}
+
+/* NOTE for Sam: Animation rule in CSS which syntax specifies animating background position */
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+.activity-1, .activity-2, .activity-3 {
+    background-size: cover;
+    width: 100px;
+    height: 300px;
+    border: 1px solid #333;  
+    border-radius: 5px;  
+    transition: transform .2s;
+}
+/* Images for the Acitivites */
+.activity-1 {
+    background-image: url("images/stanleypark2.jpg"); /*Credit Instagram Account: @samsamarullah (me)*/     
+}
+.activity-2 {
+    background-image: url("images/beach1.jpg"); /*Credit Instagram Account: @samsamarullah (me)*/  
+}
+.activity-3 {
+    background-image: url("images/hiking1.jpg"); /*Credit Instagram Account: @conortheirishguy*/ 
+}
+
+/* Hovering effect in the 3 activities */
+.activity-1:hover, .activity-2:hover, .activity-3:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+    text-shadow: 1px 1px 10px #d50e1f;
+    color: #F5F5F5;
+}
+p {
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
+
+    /* //////////////// Guide Section //////////////// */
+ 
+.guide-section {
+    height: 250px;
+    background: linear-gradient(-45deg, #a40606 20%, #62120a 50%, #000000 100%);
+    margin: 0 auto;  
+    padding: 10px;
+    
+} 
+#your-guide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 190px; 
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #e65407; 
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 1px rgba(0, 0, 0, 0.5); 
+}
+.your-guide-title {
+    font-size: 20px;
+    color: #4C4646;
+    text-shadow: 0px 0px 2px red;
+}
+.your-guide-image {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #333;  
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.5);
+}
+.your-guide-info { 
+    padding: 5px 30px;
+}
+
+/*Social Media Icons properties */
+.fa {
+    margin-right: 15px;
+    padding-bottom: 20px;
+    color: #F5F5F5;
+}
+
+/* Hovering effect on social media icons */
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+.fa-linkedin:hover {
+    color: #0a66c2 ;
+}
+    
